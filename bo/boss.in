@@ -1,0 +1,15 @@
+# optimization
+userfn       userfn.py
+bounds       0 10; 0 10; 0 5; 0 5; 0 1.5; 0 1.5
+kernel       rbf
+yrange       0 0.5
+inittype     sobol
+initpts      500
+iterpts      1000
+verbosity    3
+
+# post-processing
+pp_models 1
+pp_truef_npts 10
+pp_model_slice 5 6 150
+pp_truef_at_xhats 1
